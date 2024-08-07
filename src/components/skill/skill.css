@@ -1,0 +1,129 @@
+/* skill.css */
+
+.skills {
+  padding: 4rem 2rem;
+  background: #000; /* Black background for contrast */
+  color: #fff; /* White text for readability */
+}
+
+.skills__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00bfff; /* Light blue color for title */
+  margin-bottom: 0.5rem;
+}
+
+.skills__desc {
+  font-size: 1.2rem;
+  color: #ddd; /* Light gray for description text */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.skills__card {
+  background: #333; /* Dark background for cards */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skills__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #00bfff; /* Accent color */
+}
+
+.skills__card-content {
+  padding: 1.5rem;
+}
+
+.skills__card-content h3 {
+  font-size: 1.5rem;
+  color: #00bfff; /* Light blue color for headings */
+  margin-bottom: 0.5rem;
+}
+
+.skills__text {
+  font-size: 1rem;
+  color: #ddd; /* Light gray for card text */
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .skills__title {
+    font-size: 2.25rem;
+  }
+
+  .skills__desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills__title {
+    font-size: 2rem;
+  }
+
+  .skills__desc {
+    font-size: 1rem;
+  }
+
+  .skills__card-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .skills__text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills__desc {
+    font-size: 0.9rem;
+  }
+
+  .skills__card-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .skills__text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills__title {
+    font-size: 1.75rem;
+  }
+
+  .skills__desc {
+    font-size: 0.85rem;
+  }
+
+  .skills__card-content h3 {
+    font-size: 1rem;
+  }
+
+  .skills__text {
+    font-size: 0.75rem;
+  }
+}

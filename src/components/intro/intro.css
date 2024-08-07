@@ -1,0 +1,141 @@
+/* Intro.css */
+
+.introSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #000; /* Black background */
+  color: #fff; /* White text color for contrast */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.introContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.introTextContainer {
+  flex: 1;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.introTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.introSubtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #007BFF; /* Blue color for contrast */
+}
+
+.introName {
+  color: #00bfff; /* Lighter blue for contrast */
+}
+
+.introDescription {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ddd; /* Lighter text color */
+  line-height: 1.6;
+}
+
+.btn {
+  background: #007BFF; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05);
+}
+
+.btnImg {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for better contrast */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .introContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bgImage {
+    margin-top: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .introTitle {
+    font-size: 2rem;
+  }
+
+  .introSubtitle {
+    font-size: 1.5rem;
+  }
+
+  .introDescription {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+  }
+
+  .bgImage {
+    max-width: 100%;
+  }
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
